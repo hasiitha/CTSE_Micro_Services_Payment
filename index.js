@@ -25,5 +25,6 @@ try {
 }
 
 app.use("/payment", require("./Routes/PaymentRoute"));
+app.use("/card", require("./Routes/CreditCardRoute"));
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
